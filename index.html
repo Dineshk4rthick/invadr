@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invadr | Invasive Species Intelligence</title>
+    <meta
+      name="description"
+      content="Invadr is an AI-powered invasive species intelligence platform for rural, forest, and no-network field deployment."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="noise-bg" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <div class="brand">
+          <span class="brand-dot"></span>
+          <span class="brand-text">Invadr</span>
+        </div>
+        <nav class="nav-links">
+          <a href="#platform">Platform</a>
+          <a href="#pipeline">Pipeline</a>
+          <a href="#prototype">Prototype</a>
+          <a href="#roadmap">Roadmap</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero container reveal">
+        <p class="status-pill">Actively Building • Field Pilots in Progress</p>
+        <h1>
+          Real-time invasive species intelligence for
+          <span>remote, high-risk ecosystems</span>
+        </h1>
+        <p class="hero-copy">
+          Invadr helps field teams capture geo-tagged evidence, run AI-assisted
+          triage, sync from low-connectivity zones, and turn observations into
+          outbreak alerts and intervention plans.
+        </p>
+
+        <div class="hero-cta">
+          <a class="btn primary" href="#prototype">View Prototype Progress</a>
+          <a class="btn ghost" href="#contact">Partner With Us</a>
+        </div>
+
+        <div class="stat-grid">
+          <article>
+            <h3>Offline-first</h3>
+            <p>Capture first, sync later with resilient field workflows.</p>
+          </article>
+          <article>
+            <h3>AI-assisted</h3>
+            <p>Species prediction with confidence and risk stratification.</p>
+          </article>
+          <article>
+            <h3>Deployment-ready</h3>
+            <p>Designed for rural, forest, and no-network conditions.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="platform" class="container reveal">
+        <div class="section-head">
+          <p class="eyebrow">Platform Architecture</p>
+          <h2>Four tightly integrated layers</h2>
+        </div>
+
+        <div class="layer-grid">
+          <article class="layer-card">
+            <h3>1) Field Mobile App</h3>
+            <p>
+              Expo React Native app with role-based access and offline-first
+              report capture: photo, notes/audio, timestamp, and GPS.
+            </p>
+            <ul>
+              <li>Capture -> Compress -> Predict -> Local Store -> Sync</li>
+              <li>Sync states: pending, syncing, uploaded</li>
+              <li>Map markers and outbreak overlays for field awareness</li>
+            </ul>
+          </article>
+
+          <article class="layer-card">
+            <h3>2) AI + Backend Intelligence</h3>
+            <p>
+              FastAPI services for auth, report ingestion, model inference,
+              analytics APIs, and role-based admin access.
+            </p>
+            <ul>
+              <li>TensorFlow species classification + confidence score</li>
+              <li>Spatial-temporal risk logic for hotspot detection</li>
+              <li>Secure token-based access for users and admins</li>
+            </ul>
+          </article>
+
+          <article class="layer-card">
+            <h3>3) Admin Monitoring Dashboard</h3>
+            <p>
+              Command center for live field intelligence, report triage, and
+              coordinated response planning.
+            </p>
+            <ul>
+              <li>Map + feed monitoring in near real time</li>
+              <li>Species distribution and high-risk trend tracking</li>
+              <li>Detailed report inspection for validation workflows</li>
+            </ul>
+          </article>
+
+          <article class="layer-card">
+            <h3>4) Foresight + Resilient Connectivity</h3>
+            <p>
+              Satellite time-series change detection and LoRa edge telemetry
+              support for no-network transmission.
+            </p>
+            <ul>
+              <li>Forecast spread risk before broad ground confirmation</li>
+              <li>Fuse predictions with field reports for early warning</li>
+              <li>LoRa relay path from remote zones to gateway nodes</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="pipeline" class="container reveal">
+        <div class="section-head">
+          <p class="eyebrow">End-to-End Flow</p>
+          <h2>From field evidence to coordinated action</h2>
+        </div>
+
+        <div class="pipeline">
+          <span>Capture</span>
+          <span>Compress</span>
+          <span>Predict</span>
+          <span>Store Offline</span>
+          <span>Transmit (LoRa if needed)</span>
+          <span>Sync</span>
+          <span>Cluster / Forecast</span>
+          <span>Alert</span>
+          <span>Admin Action</span>
+        </div>
+      </section>
+
+      <section id="prototype" class="container reveal">
+        <div class="section-head">
+          <p class="eyebrow">Working Prototype</p>
+          <h2>Live build status and evidence gallery</h2>
+        </div>
+
+        <p class="prototype-copy">
+          Replace the placeholders below with your latest screenshots or field
+          photos as development milestones progress.
+        </p>
+
+        <div class="prototype-grid">
+          <figure class="prototype-card">
+            <img
+              class="prototype-slot"
+              src="assets/prototype-1.jpg"
+              alt="Invadr field report capture and AI prediction flow"
+              loading="lazy"
+            />
+            <figcaption>Field report capture and AI prediction flow</figcaption>
+          </figure>
+
+          <figure class="prototype-card">
+            <img
+              class="prototype-slot"
+              src="assets/prototype-2.jpg"
+              alt="Invadr map-based risk zones and outbreak overlays"
+              loading="lazy"
+            />
+            <figcaption>Map-based risk zones and outbreak overlays</figcaption>
+          </figure>
+
+          <figure class="prototype-card">
+            <img
+              class="prototype-slot"
+              src="assets/prototype-3.jpg"
+              alt="Invadr admin dashboard for monitoring and triage"
+              loading="lazy"
+            />
+            <figcaption>Admin dashboard for monitoring and triage</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="roadmap" class="container reveal">
+        <div class="section-head">
+          <p class="eyebrow">Execution Roadmap</p>
+          <h2>Built for scale from pilot to region-wide adoption</h2>
+        </div>
+
+        <div class="roadmap-grid">
+          <article>
+            <h3>Phase 1</h3>
+            <p>Village-level pilot with ranger teams and baseline monitoring.</p>
+          </article>
+          <article>
+            <h3>Phase 2</h3>
+            <p>District expansion with admin command center and trend analytics.</p>
+          </article>
+          <article>
+            <h3>Phase 3</h3>
+            <p>
+              Regional biosecurity deployment with predictive foresight and LoRa
+              relays.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="container reveal final-banner" id="contact">
+        <h2>Invadr is actively in development</h2>
+        <p>
+          We are currently refining field workflows, model performance, and
+          deployment readiness with real-world feedback loops.
+        </p>
+        <a class="btn primary" href="mailto:hello@invadr.org">Contact for Pilot Collaboration</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>Invadr • AI-powered Invasive Species Intelligence</p>
+        <p>Building for earlier detection and faster ecological intervention.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
